@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+     <link rel="icon" type="imagen/png" href="icono.png">
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body class="contenido">
+    <header>
+        <h1>Formulario</h1>
+    </header>
+
+    <nav>
+     <a href="index.html">Regresar</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h3>¿Qué son los formularios?</h3>
+
+            <p>
+                Los formularios web son uno de los principales
+                puntos de interacción entre un usuario y un sitio web.
+            </p>
+
+            <img src="F.png" alt="Ejemplo de formulario"
+                 class="img-centrada">
+        </section>
+
+        <section>
+            <h3>Elementos del formulario</h3>
+    <h4>El elemento <"form></h4>
+    <p>El elemento HTML <"form> se utiliza para crear un formulario HTML para la entrada de datos por parte del usuario:</p>
+    <img src="form.png" alt="formulario" width="180" height="150"class="img-centrada">
+    <p>Este <"form> elemento es un contenedor para diferentes tipos de elementos de entrada, como campos de texto, casillas de verificación,
+    botones de opción, botones de envío, etc.</p>
+
+    <h4>El elemento <"input></h4>
+    <p>El elemento HTML <"input> es el elemento de formulario más utilizado.</p>
+    <p>Un <"input> elemento puede mostrarse de muchas maneras, dependiendo del type atributo.</p>
+    <table border="2">
+        <tr>
+            <th>Tipo</th>
+            <th>Descripcion</th>
+        </tr>
+        <tr>
+            <td><´input type="text"></td>
+            <td>Muestra un campo de entrada de texto de una sola línea.</td>
+        </tr>
+        <tr>
+            <td><´input type="radio"></td>
+            <td>Muestra un botón de opción (para seleccionar una de varias opciones).</td>
+        </tr>
+        <tr>
+            <td><´input type="checkbox"></td>
+            <td>Muestra una casilla de verificación (para seleccionar cero o más de varias opciones).</td>
+        </tr>
+        <tr>
+            <td><´input type="submit"></td>
+            <td>Muestra un botón de envío (para enviar el formulario).</td>
+        </tr>
+        <tr>
+            <td><´input type="button"></td>
+            <td>Muestra un botón en el que se puede hacer clic.</td>
+        </tr>
+    </table>
+    <h4>El elemento <´label></h4>
+    <p> La <´label> etiqueta define una etiqueta para muchos elementos de formulario.</p>
+    <p>Este <´label> elemento resulta útil para los usuarios de lectores de pantalla, ya que el lector de pantalla leerá en voz alta la etiqueta
+    cuando el usuario se centre en el elemento de entrada.</p>
+    <p> Este <´label> elemento también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como botones de opción
+    o casillas de verificación), ya que cuando el usuario hace clic en el texto dentro del <´label>elemento, se activa o desactiva el botón de
+    opción o la casilla de verificación.</p>
+    <p> El foratributo de la <´label> etiqueta debe ser igual al idatributo del <´input> elemento para vincularlos.</p>
+
+    <h4>Campos de texto</h4>
+    <p>Define <´input type="text">un campo de entrada de una sola línea para introducir texto.</p>
+    <h4>Por Ejemplo</h4>
+    <p>Un formulario con campos de entrada de texto:</p>
+    <img src="EF.png" alt="Formulario" height="220" width="350"class="img-centrada">
+    <img src="EFO.png" alt="Formulario" height="200" width="200"class="img-centrada">
+
+    <h4>El botón de enviar</h4>
+    <p>Define <´input type="submit">un botón para enviar los datos del formulario a un controlador de formularios.</p>
+    <p>El gestor de formularios suele ser un archivo en el servidor con un script para procesar los datos de entrada.</p>
+    <p>El controlador del formulario se especifica en el action atributo del formulario.</p>
+
+    <h4>Por Ejemplo</h4>
+    <h4>Un formulario con un botón de envío:</h4>
+    <img src="FB.png" alt="Formulario" height="200" width="350"class="img-centrada">
+    <img src="EFB.png" alt="Formulario" height="220" width="200"class="img-centrada">
+
+    
+<section>
+    <h3>Formulario funcional</h3>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <form method="get" action="ver.html"
+              onsubmit="alert('¡Tus datos se enviaron correctamente!')">
+
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="nombre" id="nombre"
+                   maxlength="40" required>
+
+            <label for="paterno">Escribe tu apellido:</label>
+            <input type="text" name="paterno" id="paterno"
+                   required>
+
+            <label for="edad">Escribe tu edad:</label>
+            <input type="number" name="edad" id="edad"
+                   min="1" max="100" required>
+
+            <label for="color">Selecciona tu color favorito:</label>
+            <input type="color" name="color" id="color">
+
+            <div style="text-align:center">
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Limpiar">
+            </div>
+
+        </form>
+    </fieldset>
+</section>
+
+        </section>
+
+    </main>
+    <section>
+    <h2>Más información </h2>
+    <a href="https://www.w3schools.com/html/html_forms.asp">información</a>
+    <a href="https://www.youtube.com/watch?v=zgVJkC2r0eo">video tutorial</a>
+   </section>
+    <footer>
+        Página educativa - Construye aplicaciones web
+    </footer>
+
+</body>
+</html>

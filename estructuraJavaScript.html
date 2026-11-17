@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de JavaScript</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body class="contenido">
+    <a href="index.html">Regresar</a>
+    <header>
+        <h1>Estructura de JavaScript</h1>
+        <p>Elementos básicos para escribir código</p>
+        
+    </header>
+   
+        <section>
+            <h2>¿Cómo se estructura un código JavaScript?</h2>
+            <p>Un programa de JavaScript se forma con instrucciones que indican a la computadora qué debe realizar. Estas instrucciones pueden declarar variables, realizar operaciones, mostrar información o ejecutar funciones.</p>
+            <h3>Partes principales</h3>
+            <ol>
+                <li><strong>Comentarios:</strong> explican el código y no se ejecutan.</li>
+                <li><strong>Variables:</strong> almacenan información.</li>
+                <li><strong>Instrucciones:</strong> indican las acciones que se realizarán.</li>
+                <li><strong>Condiciones:</strong> permiten tomar decisiones usando if y else.</li>
+                <li><strong>Funciones:</strong> agrupan instrucciones para poder utilizarlas cuando se necesiten.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Ejemplo de estructura</h2>
+            <pre><code>// Este es un comentario
+let nombre = "Ana";
+let edad = 16;
+
+if (edad >= 18) {
+    alert("Eres mayor de edad");
+} else {
+    alert("Eres menor de edad");
+}
+
+function mostrarNombre() {
+    alert("Hola " + nombre);
+}
+
+mostrarNombre();</code></pre>
+            <p>En el ejemplo se declara el nombre y la edad, se utiliza una condición para revisar la edad y se crea una función para mostrar un saludo.</p>
+        </section>
+        <section>
+            <h2>Formas de agregar JavaScript a HTML</h2>
+            <h3>1. JavaScript interno</h3>
+            <p>Se escribe dentro de la etiqueta <code>&lt;script&gt;</code> en el mismo archivo HTML.</p>
+            <pre><code>&lt;script&gt;
+    alert("Hola mundo");
+&lt;/script&gt;</code></pre>
+            <h3>2. JavaScript externo</h3>
+            <p>El código se guarda en un archivo separado con extensión <strong>.js</strong> y se conecta al HTML con la etiqueta script.</p>
+            <pre><code>&lt;script src="codigo.js"&gt;&lt;/script&gt;</code></pre>
+            <p>Separar el código JavaScript del HTML ayuda a mantener los archivos más ordenados.</p>
+        </section>
+        <section>
+            <h2>Recomendaciones</h2>
+            <ul>
+                <li>Escribir correctamente las mayúsculas y minúsculas.</li>
+                <li>Usar llaves <code>{ }</code> para delimitar bloques de instrucciones.</li>
+                <li>Colocar nombres claros a las variables y funciones.</li>
+                <li>Utilizar comentarios para explicar partes importantes.</li>
+            </ul>
+        </section>
+    </main>
+     <section>
+    <h2>Más información </h2>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Data_structures">información</a>
+    <a href="https://www.youtube.com/watch?v=mnjWAkxRMn4">video tutorial</a>
+   </section>
+    <footer>Proyecto educativo · Construye aplicaciones web</footer>
+</body>
+</html>
